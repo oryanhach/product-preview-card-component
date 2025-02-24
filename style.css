@@ -73,3 +73,44 @@ h5,
 h6 {
 	text-wrap: balance;
 }
+
+/* general styling */
+
+body {
+	font-family: var(--ff-base);
+	font-weight: var(--fw-regular);
+	font-size: 0.875rem;
+	color: var(--clr-neutral-400);
+	background-color: var(--clr-secondary-200);
+
+	/* for this project only */
+	display: grid;
+	place-content: center;
+	margin: 1rem;
+}
+
+/* utilities */
+
+.flex-group {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+/* product styles */
+
+.product {
+	--content-padding: 1.5rem;
+	--content-spacing: 1rem;
+
+	background-color: var(--clr-neutral-100);
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.product__content {
+	border: 3px solid red;
+	display: grid;
+	gap: var(--content-spacing);
+	padding: var(--content-padding);
+}
